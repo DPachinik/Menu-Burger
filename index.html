@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <title>DEV BG</title>
+    <script src="script.js" defer ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+</head>
+<body>
+    <header class="w-full h-[420px] bg-zinc-700 bg-header bg-cover bg-center" >
+        <div class=" w-full h-full flex flex-col justify-center items-center">
+            <img 
+            src="./assets/hamb-1.png" 
+            alt="logo Hamburguesa"
+            class="w-40 h-50 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+            <h1 class="text-5xl text-white font-semibold mt-8 mb-4">Dev Burguer</h1>
+            <span class="text-white font-medium">Avda. Ucrania c/ Laureles, Encarnación-Py.</span>
+            <div id="date" class="bg-green-700 py-1 px-2 rounded-lg my-3" >
+                <span class="text-white font-medium ">Lun a Dom - 17:00 a 00:00</span>
+            </div>  
+        </div>
+    </header>
+    <h2 class="text-black font-semibold text-xl md:text-2xl text-center my-4"> Menu DEV</h2>
+    <div id="menu">
+        <main class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 px-4 mx-auto mb-16 max-w-7xl">
+            <div class="flex gap-2 items-center border-t border-slate-200 p-2">
+                <img 
+                src="./assets/hamb-1.png" 
+                alt="Hamburguesa doble"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="text-lg font-bold">Hamburguesa Clásica</p>
+                    <p class="text-xs">Suculenta carne de res a la parrilla, acompañada de lechuga, tomate, cebolla, pepinillos y mayonesa en un esponjoso pan de sésamo</p>
+
+                    <div class="flex mt-1 justify-between">
+                        <p class="text-lg font-bold">Gs 30.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Hamburguesa Clásica"
+                        data-price="30000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 items-center border-t border-slate-200 p-2">
+                <img 
+                src="./assets/hamb-2.png" 
+                alt="Hamburguesa doble"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="text-lg font-bold">Hamburguesa Doble Queso</p>
+                    <p class="text-xs">Para los amantes del queso: dos jugosas porciones de carne de res, doble capa de queso cheddar fundido, pepinillos, cebolla caramelizada y nuestra salsa especial, todo en un pan suave y tostado.</p>
+
+                    <div class="flex mt-1 justify-between">
+                        <p class="text-lg font-bold">Gs 45.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Hamburguesa Doble Queso"
+                        data-price="45000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 items-center border-t border-slate-200 p-2 ">
+                <img 
+                src="./assets/hamb-3.png" 
+                alt="Hamburguesa BBQ"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="text-lg font-bold">Hamburguesa BBQ</p>
+                    <p class="text-xs">Disfruta de una explosión de sabor con nuestra hamburguesa BBQ, con carne de res a la parrilla, queso cheddar ahumado, crujiente tocino, cebolla caramelizada y nuestra salsa BBQ especial, servida en un pan rústico.</p>
+
+                    <div class="flex mt-1 justify-between">
+                        <p class="text-lg font-bold">Gs 40.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Hamburguesa Doble Queso"
+                        data-price="40000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 items-center border-t border-slate-200 p-2">
+                <img 
+                src="./assets/hamb-4.png" 
+                alt="Hamburguesa de Pollo Crispy"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="text-lg font-bold">Hamburguesa de Pollo Crispy</p>
+                    <p class="text-xs">Pechuga de pollo empanizada y crujiente, acompañada de lechuga fresca, tomate y mayonesa de ajo, todo en un pan brioche dorado. Perfecta para los que prefieren una opción ligera pero llena de sabor.</p>
+
+                    <div class="flex mt-1 justify-between">
+                        <p class="text-lg font-bold">Gs 28.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Hamburguesa de Pollo Crispy"
+                        data-price="28000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 items-center border-t border-slate-200 p-2">
+                <img 
+                src="./assets/hamb-5.png" 
+                alt="Hamburguesa cuatro quesos"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="text-lg font-bold">Hamburguesa 4 Quesos</p>
+                    <p class="text-xs">Mezcla irresistible de cheddar, mozzarella, gouda y azul. Servida en un pan brioche tostado, acompañada de 180g carne de res, lechuga crujiente, rodajas de tomate y una suave salsa de mostaza y miel</p>
+
+                    <div class="flex mt-1 justify-between">
+                        <p class="text-lg font-bold">Gs 45.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Hamburguesa 4 Quesos"
+                        data-price="45000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 items-center border-t border-slate-200 p-2">
+                <img 
+                src="./assets/hamb-6.png" 
+                alt="Hamburguesa Sencilla"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="text-lg font-bold">Hamburguesa Sencilla</p>
+                    <p class="text-xs">Deliciosa carne de res a la parrilla, colocada en un pan brioche suave. Complementada con lechuga crujiente, rodajas de cebolla, tomate fresco y una loncha de queso cheddar fundido</p>
+
+                    <div class="flex mt-1 justify-between">
+                        <p class="text-lg font-bold">Gs 25.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Hamburguesa Sencilla"
+                        data-price="25000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 items-center border-t border-slate-200 p-2">
+                <img 
+                src="./assets/hamb-7.png" 
+                alt="Hamburguesa Crujiente"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="text-lg font-bold">Hamburguesa Crujiente</p>
+                    <p class="text-xs">featuring una jugosa carne a la parrilla, servida en un pan brioche dorado,coronada con crujientes aros de cebolla empanizados y dorados, lechuga fresca y rodajas de tomate. Todo aderezado con una deliciosa salsa BBQ</p>
+
+                    <div class="flex mt-1 justify-between">
+                        <p class="text-lg font-bold">Gs 43.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Hamburguesa Crujiente"
+                        data-price="43000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 items-center border-t border-slate-200 p-2">
+                <img 
+                src="./assets/hamb-8.png" 
+                alt="Hamburguesa vegana "
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="text-lg font-bold">Hamburguesa Vegana </p>
+                    <p class="text-xs">deliciosa, con una jugosa y sabrosa hamburguesa de garbanzos y quinoa, servida en un pan integral suave. Acompañada de lechuga fresca, rodajas de tomate, pepinillos crujientes y aguacate cremoso. Todo aderezado con una salsa de tahini y limón</p>
+
+                    <div class="flex mt-1 justify-between">
+                        <p class="text-lg font-bold">Gs 32.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Hamburguesa Vegana "
+                        data-price="32000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 items-center border-t border-slate-200 p-2">
+                <img 
+                src="./assets/papas.png" 
+                alt="Papas fritas"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="text-lg font-bold">Papas Fritas </p>
+                    <p class="text-xs">Papas fritas crujientes, una especialidad de la casa, tamaño mediano</p>
+
+                    <div class="flex mt-1 justify-between">
+                        <p class="text-lg font-bold">Gs 12.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Hamburguesa Vegana "
+                        data-price="32000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div>
+            <h2 class="text-black font-bold text-xl md:text-2xl text-start ml-10 my-4"> Bebidas</h2>
+        </div>
+        <div  class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-12 px-4 mx-auto mb-16 max-w-7xl">
+            <div class="flex gap-2 w-full border-t border-slate-200 p-2 ">
+                <img 
+                src="./assets/refri-2.png" 
+                alt="Guaraná lata"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div class="flex flex-col justify-between">
+                    <p class="text-lg font-bold">Guaraná</p>
+
+                    <div class="flex w-full mt-3 justify-between gap-3">
+                        <p class="text-lg font-bold">Gs 6.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Guarana"
+                        data-price="6000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+        
+            <div class="flex gap-2 w-full border-t border-slate-200 p-2 ">
+                <img 
+                src="./assets/refri-1.png" 
+                alt="Coca Cola lata"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div class="flex flex-col justify-between">
+                    <p class="text-lg font-bold">Coca Cola</p>
+
+                    <div class="flex w-full mt-3 justify-between gap-3">
+                        <p class="text-lg font-bold">Gs 6.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Coca Cola"
+                        data-price="6000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+            <div class="flex gap-2 w-full border-t border-slate-200 p-2 ">
+                <img 
+                src="./assets/refri-3.png" 
+                alt="Sprite lata"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div class="flex flex-col justify-between">
+                    <p class="text-lg font-bold">Sprite</p>
+
+                    <div class="flex w-full mt-3 justify-between gap-3">
+                        <p class="text-lg font-bold">Gs 6.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Sprite"
+                        data-price="6000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+            <div class="flex gap-2 w-full border-t border-slate-200 p-2 ">
+                <img 
+                src="./assets/refri-4.png" 
+                alt="fanta 500ml"
+                class="w-24 h-24 rounded-md hover:scale-105 hover:-rotate-2 duration-300"
+                />
+                <div class="flex flex-col justify-between">
+                    <p class="text-lg font-bold">Fanta</p>
+
+                    <div class="flex w-full mt-3 justify-between gap-3">
+                        <p class="text-lg font-bold">Gs 6.000</p>
+                        <button class="add-to-card-btn"
+                        data-name="Fanta"
+                        data-price="6000">
+                            <i class="fa fa-cart-plus border border-black border-solid rounded-md p-1 hover:text-green-600"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div id="cart-modal" class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  justify-center items-center hidden">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="font-semibold text-center text-2xl mb-2">Mi Carrito</h2>
+            <div id="cart-items" class="flex flex-col justify-between mb-3 "></div>
+            <p class="font-semibold mb-3">Total: <span id="cart-total" class="font-semibold">0.00</span></p>
+            <p class="font-semibold mb-1">Destino de la entrega:</p>
+            <input
+            type="text"
+            placeholder="Agregue su ubicación"
+            id="adress"
+            class="w-full p-1 my-1  border border-solid border-1px rounded-md"
+            />
+            <p id="adress-warn" class="text-red-600 hidden">Agregue su ubicación para entrega!</p>
+            <div class="flex items-center justify-between mt-3">
+                <button id="close-modal-btn" class="bg-red-500 text-white p-1 rounded-md">Cancelar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white p-1 rounded-md">Confirmar Pedido</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="flex bg-red-600 w-full py-2 justify-center items-center font-bold fixed bottom-0 z-40">
+        <button id="cart-btn" class="text-white">
+            (<span id='cart-count' >0</span>)
+            Mi carrito
+            <i class="fa fa-cart-plus text-white"></i>
+        </button>
+
+    </footer>
+</body>
+</html>
