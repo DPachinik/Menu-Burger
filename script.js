@@ -167,7 +167,7 @@ checkout.addEventListener('click', function(){
 function  checkRestaurantOpen(){
     const dateDay=new Date();
     const time=dateDay.getHours();
-    return time>=10 && time<=19;
+    return time>=17 && time<=23;
     
 }
 
