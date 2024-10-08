@@ -65,13 +65,13 @@ function updateCardModal(){
     cart.forEach(item=>{
         const cartItemsElement=document.createElement('div')
         cartItemsElement.innerHTML=`
-            <div>
+            <div class='flex justify-between border-b py-2'>
                 <div>
-                    <p>${item.name}</p>
-                    <p>Gs. ${item.price.toLocaleString('es-PY')}</p>
+                    <p class='font-semibold'>${item.name}</p>
+                    <p>Precio: Gs. ${item.price.toLocaleString('es-PY')}</p>
                     <p>Cantidad: ${item.quantity}</p>
                 </div>
-                <button class='remove-item' data-item='${item.name}'>Eliminar</button>
+                <button class='remove-item text-red-500 font-medium' data-item='${item.name}'>Eliminar</button>
             </div>
         `
         items.appendChild(cartItemsElement)
